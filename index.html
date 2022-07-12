@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="base">
+        <h1>Calculadora</h1>
+        <form name="calculadora">
+            <input type="text" name="respuesta" id="" autocomplete="off" readonly>
+
+            <input type="button" value="7" onclick="document.calculadora.respuesta.value+='7'" class="numeros">
+            <input type="button" value="8" onclick="document.calculadora.respuesta.value+='8'" class="numeros">
+            <input type="button" value="9" onclick="document.calculadora.respuesta.value+='9'" class="numeros">
+            <input type="button" value="+" onclick="document.calculadora.respuesta.value+='+'" class="operadores">
+            <br>
+            <input type="button" value="4" onclick="document.calculadora.respuesta.value+='4'" class="numeros">
+            <input type="button" value="5" onclick="document.calculadora.respuesta.value+='5'" class="numeros">
+            <input type="button" value="6" onclick="document.calculadora.respuesta.value+='6'" class="numeros">
+            <input type="button" value="-" onclick="document.calculadora.respuesta.value+='-'" class="operadores">
+            <br>
+            <input type="button" value="1" onclick="document.calculadora.respuesta.value+='1'" class="numeros">
+            <input type="button" value="2" onclick="document.calculadora.respuesta.value+='2'" class="numeros">
+            <input type="button" value="3" onclick="document.calculadora.respuesta.value+='3'" class="numeros">
+            <input type="button" value="x" onclick="document.calculadora.respuesta.value+='*'" class="operadores">
+            <br>
+            <input type="button" value="0" onclick="document.calculadora.respuesta.value+='0'" class="numeros">
+            <input type="reset" value="C">
+            <input type="button" value="=" onclick="document.calculadora.respuesta.value=eval(document.calculadora.respuesta.value)">
+            <input type="button" value="÷" onclick="document.calculadora.respuesta.value+='/'" class="operadores">
+        </form>
+    </div>
+</body>
+
+</html>
